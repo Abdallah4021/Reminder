@@ -16,6 +16,11 @@
 		E5DE71DF273A32CD005975B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DE71DD273A32CD005975B9 /* LaunchScreen.storyboard */; };
 		E5DE71E8273AD061005975B9 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE71E7273AD061005975B9 /* Reminder.swift */; };
 		E5DE71EA273BBB55005975B9 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE71E9273BBB55005975B9 /* ReminderListCell.swift */; };
+		E5E750662765B6470016A89A /* EditTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E750652765B6470016A89A /* EditTitleCell.swift */; };
+		E5E750682765B6990016A89A /* EditDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E750672765B6990016A89A /* EditDateCell.swift */; };
+		E5E7506A2765B6B30016A89A /* EditNotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E750692765B6B30016A89A /* EditNotesCell.swift */; };
+		E5E7506C2765C7BF0016A89A /* ReminderDetailEditDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7506B2765C7BF0016A89A /* ReminderDetailEditDataSource.swift */; };
+		E5E7506E2765D74E0016A89A /* ReminderDetailViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7506D2765D74E0016A89A /* ReminderDetailViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		E5DE71E0273A32CD005975B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5DE71E7273AD061005975B9 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		E5DE71E9273BBB55005975B9 /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
+		E5E750652765B6470016A89A /* EditTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTitleCell.swift; sourceTree = "<group>"; };
+		E5E750672765B6990016A89A /* EditDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDateCell.swift; sourceTree = "<group>"; };
+		E5E750692765B6B30016A89A /* EditNotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesCell.swift; sourceTree = "<group>"; };
+		E5E7506B2765C7BF0016A89A /* ReminderDetailEditDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailEditDataSource.swift; sourceTree = "<group>"; };
+		E5E7506D2765D74E0016A89A /* ReminderDetailViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				E5E0EAF4274F6DEB004C1CEF /* src */,
-				E5DE71E6273AD049005975B9 /* model */,
 				E5DE71D2273A32CD005975B9 /* AppDelegate.swift */,
 				E5DE71D4273A32CD005975B9 /* SceneDelegate.swift */,
 				E5DE71D8273A32CD005975B9 /* Main.storyboard */,
@@ -85,11 +94,25 @@
 		E5E0EAF4274F6DEB004C1CEF /* src */ = {
 			isa = PBXGroup;
 			children = (
-				E5DE71E9273BBB55005975B9 /* ReminderListCell.swift */,
+				E5E750642765B5E80016A89A /* Views */,
+				E5DE71E6273AD049005975B9 /* model */,
 				E5DE71D6273A32CD005975B9 /* ReminderListViewController.swift */,
 				E5677F04275165DF00137085 /* ReminderDetailViewController.swift */,
+				E5E7506B2765C7BF0016A89A /* ReminderDetailEditDataSource.swift */,
+				E5E7506D2765D74E0016A89A /* ReminderDetailViewDataSource.swift */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		E5E750642765B5E80016A89A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE71E9273BBB55005975B9 /* ReminderListCell.swift */,
+				E5E750652765B6470016A89A /* EditTitleCell.swift */,
+				E5E750672765B6990016A89A /* EditDateCell.swift */,
+				E5E750692765B6B30016A89A /* EditNotesCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,11 +186,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DE71D7273A32CD005975B9 /* ReminderListViewController.swift in Sources */,
+				E5E750682765B6990016A89A /* EditDateCell.swift in Sources */,
 				E5DE71EA273BBB55005975B9 /* ReminderListCell.swift in Sources */,
+				E5E750662765B6470016A89A /* EditTitleCell.swift in Sources */,
+				E5E7506A2765B6B30016A89A /* EditNotesCell.swift in Sources */,
 				E5DE71D3273A32CD005975B9 /* AppDelegate.swift in Sources */,
 				E5677F05275165DF00137085 /* ReminderDetailViewController.swift in Sources */,
 				E5DE71D5273A32CD005975B9 /* SceneDelegate.swift in Sources */,
 				E5DE71E8273AD061005975B9 /* Reminder.swift in Sources */,
+				E5E7506C2765C7BF0016A89A /* ReminderDetailEditDataSource.swift in Sources */,
+				E5E7506E2765D74E0016A89A /* ReminderDetailViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
